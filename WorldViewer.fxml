@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="426.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+            <Menu mnemonicParsing="false" text="World">
+              <items>
+                <MenuItem fx:id="ICWorld" mnemonicParsing="false" text="ICWorld" />
+              </items>
+            </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="456.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+      <children>
+            <ImageView fx:id="imageView" fitHeight="192.0" fitWidth="297.0" layoutX="321.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="itemView" fitHeight="149.0" fitWidth="176.0" layoutX="68.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="LeftButton" layoutX="352.0" layoutY="323.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="101.0" text="Left" />
+            <Button fx:id="RightButton" layoutX="485.0" layoutY="323.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="101.0" text="Right" />
+            <Button fx:id="ForwardButton" layoutX="353.0" layoutY="257.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="234.0" text="Forward" />
+            <TextArea fx:id="MessageField" editable="false" layoutX="353.0" layoutY="208.0" prefHeight="13.0" prefWidth="234.0" />
+            <Button fx:id="PickUpButton" layoutX="172.0" layoutY="263.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="101.0" text="Pick Up" />
+            <Button fx:id="PutDownButton" layoutX="39.0" layoutY="263.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="101.0" text="Put Down" />
+            <ChoiceBox fx:id="ItemsCarried" layoutX="39.0" layoutY="331.0" prefHeight="37.0" prefWidth="234.0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
